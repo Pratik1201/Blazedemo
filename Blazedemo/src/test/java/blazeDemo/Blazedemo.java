@@ -33,6 +33,11 @@ public class Blazedemo {
 		Select s3 = new Select(cardType);
 		s3.selectByVisibleText("American Express");
 		driver.findElement(By.xpath("//input[@name='creditCardNumber']")).sendKeys("546385271477");
+		driver.findElement(By.id("creditCardMonth")).sendKeys("12");
+		driver.findElement(By.xpath("//input[@placeholder='Year']")).sendKeys("2050");
+		driver.findElement(By.id("nameOnCard")).sendKeys("Sumit S");
+		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		
 		
