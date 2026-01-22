@@ -38,8 +38,9 @@ public class Blazedemo {
 		driver.findElement(By.id("nameOnCard")).sendKeys("Sumit S");
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		
-		
+		System.out.println(driver.getTitle());
+		System.out.println(driver.findElement(By.xpath("//div[@class='container hero-unit']")).getText());
+		driver.quit();
 		
 	}
 
